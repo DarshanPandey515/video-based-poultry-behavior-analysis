@@ -1,58 +1,13 @@
-# Video-Based Behavioral Proxy Extraction for Group-Housed Poultry
+# Video-Based Behavioral Proxy Extraction for Poultry
 
-## Abstract
-This project presents a prototype computer vision framework for extracting
-movement and spatial interaction proxies from RGB video recordings of
-group-housed poultry. Using object detection and multi-object tracking,
-the system generates relative movement and crowding indicators that can
-support behavioral analysis and precision livestock research. The work
-emphasizes interpretability, scalability, and clear acknowledgment of
-methodological limitations.
+## Overview
+This project explores the use of computer vision to extract
+movement and spatial interaction proxies from video recordings
+of group-housed poultry.
 
-## Motivation
-Manual observation of poultry behavior is labor-intensive and difficult
-to scale in commercial environments. Automated video-based analysis offers
-a non-invasive alternative, but raw video must be converted into structured
-behavioral signals. This project explores whether simple and interpretable
-computer vision techniques can extract meaningful behavioral proxies from
-low-cost RGB video data.
+## Scope
+This is a research prototype focused on behavioral indicators,
+not diagnosis or prediction.
 
-## System Overview
-- RGB video input from fixed cameras
-- Bird detection using a pretrained object detection model
-- Frame-to-frame association via IoU-based tracking
-- Trajectory-based feature extraction
-- Computation of group-level behavioral proxies
-
-## Extracted Behavioral Proxies
-
-### Relative Movement Index (RMI)
-A normalized measure of centroid displacement aggregated across tracked
-birds and frames. Intended for comparative analysis between video segments,
-not absolute activity measurement.
-
-### High-Density Interaction Events (HDIE)
-Counts close-proximity interactions between birds based on spatial distance
-thresholds. Used as a proxy for crowding and spatial pressure, not aggression.
-
-
-## Assumptions and Limitations
-- Fixed camera perspective
-- 2D RGB video only (no depth information)
-- Identity switches under occlusion
-- Proxy class used for bird detection
-- Metrics are relative indicators, not clinical measures
-
-
-## Technologies
-- PyTorch, YOLOv8
-- OpenCV
-- Django REST Framework
-- NumPy
-- React (for result visualization)
-
-## Future Work
-- Species-specific fine-tuning on poultry datasets
-- Pose-based gait and lameness indicators
-- Integration with environmental sensors
-- Real-time deployment and edge inference
+## Status
+In development.
