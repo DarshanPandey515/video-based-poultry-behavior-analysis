@@ -15,11 +15,17 @@ Supports research in **precision livestock monitoring**, providing non-invasive 
 
 ## How to Run
 1. Activate virtual environment:
+```
 venv\Scripts\activate
+```
 2. Install dependencies:
+```
 pip install -r requirements.txt
+```
 3. Run analysis on a sample video:
+```
 python analysis\run_analysis.py
+```
 
 
 ## Assumptions & Limitations
@@ -31,3 +37,4 @@ python analysis\run_analysis.py
 - Integrate custom-trained chicken detector
 - Add more complex tracking (e.g., DeepSORT)
 - Include multiple camera angles for 3D behavior estimation
+
